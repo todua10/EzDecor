@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EzDecor</string>
+    <string name="prev_button">Назад</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="addWP_button">Добавить обои</string>
+    <string name="addDW_button">Добавить окно/дверь</string>
+    <string name="calcMaterial_button">Рассчитать материал</string>
+    <string name="next_button">Далее</string>
+    <string name="load_model">Загрузить модель</string>
+    <string name="create_model">Создать новую модель</string>
+    <string name="choose_form">Выберите форму</string>
+    <string name="rectangle_button">Прямоугольная</string>
+    <string name="triangle_button">Треугольная</string>
+    <string name="input_param_title">Введите данные:</string>
+    <string name="sideA">Сторона A</string>
+    <string name="sideB">Сторона B</string>
+    <string name="sideC">Сторона C</string>
+    <string name="height_of_room">Высота комнаты</string>
+    <string name="sides_count">Количество сторон:</string>
+    <string name="calculate_button">Рассчитать</string>
+    <string name="cost_for_roll">Цена обоев за 1 рулон</string>
+    <string name="length">Длина:</string>
+    <string name="width">Ширина:</string>
+    <string name="total_square">Итоговая площадь стен:</string>
+    <string name="total_cost">Итоговая стоимость:</string>
+    <string name="count_of_rolls">Необходимое количество рулонов:</string>
+    <string name="capture">Сделать фото</string>
+    <string name="total_square_e3a">Итоговая площадь стен: %.2f кв.м.</string>
+    <string name="count_of_rolls_e3a">Необходимое количество рулонов: %d шт.</string>
+    <string name="total_cost_e3a">Итоговая стоимость: %.2f руб.</string>
+    <string-array name="window_door_types">
+        <item>Окно</item>
+        <item>Дверь</item>
+    </string-array>
+</resources>

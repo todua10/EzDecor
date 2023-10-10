@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".CreateActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/choose_form"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/triangle" />
+    <Button
+        android:id="@+id/rectangle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rectangle"
+        android:layout_alignLeft="@id/rectangle"
+        android:layout_alignRight="@id/rectangle"
+        android:text="@string/rectangle_button"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/triangle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/triangle"
+        android:layout_alignLeft="@id/triangle"
+        android:layout_alignRight="@id/triangle"
+        android:text="@string/triangle_button"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="4dp"
+        android:text="@string/prev_button"
+        android:textSize="16sp" />
+</RelativeLayout>

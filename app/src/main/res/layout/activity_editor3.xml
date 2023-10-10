@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Editor3Activity">
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/bottom_lay"
+        android:gravity="center">
+        <Button
+            android:id="@+id/addWP_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:text="@string/addWP_button"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/addDW_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:text="@string/addDW_button"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="4dp"
+            android:text="@string/prev_button"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/calcMaterial_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:text="@string/calcMaterial_button"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

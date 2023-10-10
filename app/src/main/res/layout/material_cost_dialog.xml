@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cost_for_roll"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceLabel"
+        android:layout_marginTop="16dp"
+        android:hint="@string/cost_for_roll"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+    <LinearLayout
+        android:id="@+id/linear_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/length_of_wp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/length"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/width_of_wp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/width"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_text"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/length_of_wp_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/length"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/width_of_wp_edit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/width"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:minHeight="48dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/totalAreaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/total_square"
+        android:layout_below="@id/linear_edit_text"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/count_of_rolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/count_of_rolls"
+        android:layout_below="@id/totalAreaTextView"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/totalCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/total_cost"
+        android:layout_below="@id/count_of_rolls"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalCostTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate_button" />
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalCostTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/cancel_button" />
+</RelativeLayout>
